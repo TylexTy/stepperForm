@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type="text/css" href="mystyles.css">
+    <script src="index.js" defer></script>
+    <title>Stepper Form</title>
+</head>
+<body>
+    <div id="main-content">
+        <div class="step">
+            <div class="circle" id="circle1">
+                <h3 class="circle-text">1</h3>
+            </div>
+            <div class="step-box">
+                <h3>Step 1</h3>
+            </div>
+            <div id="line1">
+                <hr width="1" size="100%">
+            </div>
+            <form id="email-form">
+                <label for="email">Enter you Email: </label><br>
+                <input type = "email" id="email" name="email"><br>
+                <button id="continue" onclick= "step2()" type="button">Continue</button>
+            </form>
+        </div>
+        <div class="step">
+            <div class="circle circle-grey" id="circle2">
+                <h3 class="circle-text">2</h3>
+            </div>
+            <div class="step-box">
+                <h3>Step 2</h3>
+            </div>
+            <div id="line2">
+                <hr width="1" size="100%">
+            </div>
+            <form id="password-form">
+                <label for="password">Enter your Password: </label><br>
+                <input type ="password" id="password" name="password"><br>
+                <button type="button" onclick="step3()">Continue</button>
+                <button id="back" type ="button" onclick="goBack()" name="back">back</button>
+            </form>
+        </div>
+        <div class="step">
+            <div class="circle circle-grey" id="circle3">
+                <h3 class="circle-text">3</h3>
+            </div>
+            <div class="step-box">
+                <h3>Step 3</h3>
+            </div><br>
+            <form id="finished-form">
+                <label for="submit">Finish!</label><br>
+                <input type ="submit" name="submit">
+                <button id="back" type ="button" onclick="goBack()" name="back">back</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
